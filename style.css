@@ -3,13 +3,27 @@
 }
 
 body {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
   height: 100vh;
 }
 
-.mynotes {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50%,  -50%);
+.notepad {
+  width: 80%;
+  max-width: 650px;
+}
+
+.header {
+  width: 100%;
+  background: #3e3e3e;
+  height: 60px;
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  flex: 0 1 0;
+}
+
+.paper {
+  width: 100%;
 }
