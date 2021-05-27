@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.mynotes {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%,  -50%);
+}
