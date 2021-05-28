@@ -14,11 +14,15 @@ body {
   padding: 50px 30px;
   height: 100vh;
   font-family: "Architects Daughter", cursive;
+  background-image: url("jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .notepad {
   width: 80%;
   max-width: 650px;
+  transform: rotateY(40deg);
 }
 
 .header {
@@ -29,11 +33,13 @@ body {
   border-radius: 5px 5px 0 0;
 
   padding: 35px 40px;
+  transition: all 0.2s;
 }
 
 #title {
   flex: 0 0 60%;
   margin-right: 4.5rem;
+  transform: skewX(-20deg);
 }
 
 #search-text {
