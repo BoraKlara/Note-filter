@@ -16,14 +16,6 @@ body {
   font-family: "Architects Daughter", cursive;
 }
 
-#search-text {
-  background: transparent;
-}
-
-#search-text:focus {
-  border: none;
-}
-
 .notepad {
   width: 80%;
   max-width: 650px;
@@ -35,8 +27,22 @@ body {
   height: 60px;
   display: flex;
   border-radius: 5px 5px 0 0;
-  flex: 0 1 0;
+
   padding: 35px 40px;
+}
+
+#title {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+#search-text {
+  background: #ccc;
+  flex: 1;
+}
+
+#search-text:focus {
+  border: none;
 }
 
 .paper {
@@ -46,11 +52,14 @@ body {
   height: 450px;
   background: repeating-linear-gradient(
     #f0ece1,
-    #f0ece1 20px,
-    #aeaaa7 20px,
-    #aeaaa7 22px
+    #f0ece1 25px,
+    #aeaaa7 25px,
+    #aeaaa7 26px
   );
   padding: 35px 40px;
   font-family: "" Architects Daughter ", cursive;";
-  line-height: 19px;
+}
+
+.notes {
+  line-height: -25px;
 }
