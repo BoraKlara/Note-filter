@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+$paper-color: #f0ece1;
+$line-color: #aeaaa7;
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +13,15 @@ body {
   justify-content: center;
   padding: 50px 30px;
   height: 100vh;
+  font-family: "Architects Daughter", cursive;
+}
+
+#search-text {
+  background: transparent;
+}
+
+#search-text:focus {
+  border: none;
 }
 
 .notepad {
@@ -16,14 +30,27 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 600px;
   background: #3e3e3e;
   height: 60px;
   display: flex;
   border-radius: 5px 5px 0 0;
   flex: 0 1 0;
+  padding: 35px 40px;
 }
 
 .paper {
-  width: 100%;
+  /*  width: 100%;
+  height: 100%; */
+  width: 600px;
+  height: 450px;
+  background: repeating-linear-gradient(
+    #f0ece1,
+    #f0ece1 20px,
+    #aeaaa7 20px,
+    #aeaaa7 22px
+  );
+  padding: 35px 40px;
+  font-family: "" Architects Daughter ", cursive;";
+  line-height: 19px;
 }
