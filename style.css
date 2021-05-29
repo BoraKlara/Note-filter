@@ -45,6 +45,7 @@ body {
 #search-text {
   background: #ccc;
   flex: 1;
+  text-align: center;
 }
 
 #search-text:focus {
@@ -69,3 +70,8 @@ body {
 .notes {
   line-height: -25px;
 }
+/* 
+.noteStyle {
+  text-transform: ;
+  font-size: 1.5rem;
+} */
