@@ -1,10 +1,10 @@
 const notes = [
   {
-    title: "Attend webinar",
+    title: "Attend webinars",
     body: "Coaching webinar in June",
   },
   {
-    title: "Buy special spieces",
+    title: "Buy special spieces for cooing",
     body: "Recreate the amazing curry recipe",
   },
   {
@@ -14,6 +14,14 @@ const notes = [
   {
     title: "submit the coaching recording",
     body: "review the transciption again",
+  },
+  {
+    title: "Book a hotel for my holiday",
+    body: "check the reviews",
+  },
+  {
+    title: "Book an appointment for back massage",
+    body: "Call the massage salon",
   },
 ];
 
@@ -38,6 +46,7 @@ const renderNotes = function (notes, filters) {
   filteredNotes.forEach(function (note) {
     const noteElement = document.createElement("p");
     noteElement.textContent = note.title;
+    document.querySelector("#notes").classList.add("noteStyle");
     document.querySelector("#notes").appendChild(noteElement);
   });
 };
