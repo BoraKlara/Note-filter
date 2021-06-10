@@ -4,7 +4,7 @@ const notes = [
     body: "Coaching webinar in June",
   },
   {
-    title: "Buy special spieces for cooing",
+    title: "Buy special spieces for cooking",
     body: "Recreate the amazing curry recipe",
   },
   {
