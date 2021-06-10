@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
-$paper-color: #f0ece1;
-$line-color: #aeaaa7;
+--paper-color: #f0ece1;
+--line-color: #aeaaa7;
 
 * {
   box-sizing: border-box;
@@ -11,19 +11,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 30px;
+  padding: 30px 30px;
   height: 100vh;
   font-family: "Architects Daughter", cursive;
   /*   background-image: url("img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg"); */
   background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-  background-position: center;
+  background-position: center center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .notepad {
   width: 80%;
   max-width: 650px;
-  transform: rotateY(40deg);
+  /*  transform: rotateY(40deg); */
 }
 
 .header {
@@ -33,7 +34,7 @@ body {
   display: flex;
   border-radius: 5px 5px 0 0;
 
-  padding: 35px 40px;
+  padding: 20px 40px;
   transition: all 0.2s;
 }
 
@@ -41,16 +42,26 @@ body {
   flex: 0 0 60%;
   margin-right: 4.5rem;
   transform: skewX(-20deg);
+  color: #f0ece1;
 }
 
 #search-text {
-  background: #ccc;
+  background: #838080;
   flex: 1;
   text-align: center;
 }
 
+::placeholder {
+  color: #f0ece1;
+  opacity: 1;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transform: skewX(-20deg);
+}
+
 #search-text:focus {
   border: none;
+  outline: none;
 }
 
 .paper {
