@@ -24,7 +24,7 @@ body {
 .notepad {
   width: 80%;
   max-width: 650px;
-  /*  transform: rotateY(40deg); */
+  transform: rotateY(40deg);
 }
 
 .header {
